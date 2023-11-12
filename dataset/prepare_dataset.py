@@ -121,10 +121,11 @@ def get_corr_matrix(data):
     return correlation_df
 dataset = dataset.reset_index(drop=True)
 correlation_df = get_corr_matrix(dataset)
-plt.figure(figsize=(16, 10), dpi=600)
+pic_file = "Spearman_Correlation_Heatmap.png"
+plt.figure(figsize=(16, 10), dpi=300)
 sns.heatmap(correlation_df, annot=True, cmap='coolwarm', vmin=-1, vmax=1, fmt='.3f', linewidths=.5)
 plt.title("Spearman Correlation Heatmap")
 plt.xticks(rotation=45)
-plt.show()
-pic_file = "Spearman Correlation Heatmap"
 plt.savefig(pic_file)
+plt.show()
+# %%
