@@ -14,5 +14,6 @@ This study investigates the performance of Attention Recurrent Neural Network (A
 ### Strategy Results
 ![Strategy Results](metrics/Strategy_Results.png)
 ### Cumulative Returns
+Cumulative Returns for Different Strategy Returns
 ![Alt text](metrics/RNN_returns.png)
 ![Alt text](metrics/Transformer_returns.png)
